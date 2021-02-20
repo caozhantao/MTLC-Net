@@ -65,20 +65,20 @@ class MEDICAL(data.Dataset):
                     e_value = 0.015
 
                 if self.bi_rads_labels[idxes[i]] == 2:
-                    l_value = 0.265
-                    e_value = 0.735
+                    l_value = 0.94
+                    e_value = 0.06
 
                 if self.bi_rads_labels[idxes[i]] == 3:
                     l_value = 0.355
                     e_value = 0.645
 
                 if self.bi_rads_labels[idxes[i]] == 4:
-                    l_value = 0.109
-                    e_value = 0.891
+                    l_value = 0.275
+                    e_value = 0.725
 
                 if self.bi_rads_labels[idxes[i]] == 5:
-                    l_value = 0.063
-                    e_value = 0.937
+                    l_value = 0.025
+                    e_value = 0.975
 
                 self.soft_labels[idxes[i]][0] = l_value
                 self.soft_labels[idxes[i]][1] = e_value
